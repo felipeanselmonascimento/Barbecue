@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Barbecue Time ! </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quintessential&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hubballi&family=Quintessential&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <section class="paginaprincipal">
+            <img id="logo" src="./images/logo.png" alt="BBQ meter"> 
+            <h1> O RENNAN E GAY.</h1>
+            <img id="imagemprincipal" src="./images/Illustration.png" alt="ilustration">
+            <a class="rolar" href="#calc"> Let's BBQ! </a>
+        </section>
+        <section class="calculator" id="calc">
+            <img id="logoblack" src="./images/blackLogo.png" alt="logo 2">
+            <div class="inputField" id="input">
+                <img id="imgcasal" src="./images/casal.png" alt="casal">
+                <input type="number" id="alcoholicAdults" name="adults" min="0" placeholder="Adults (Alcoholic)">
+            </div>
+            <div class="inputField" id="input">
+                <img id="imgcasal2" src="./images/casal.png" alt="casalnonalcoholic">
+                <input type="number" id="nonalcoholicAdults" name="adults" min="0" placeholder="Adults (non Alcoholic)">
+            </div>
+            <div class="inputField" id="input">
+                <img id="imgcrianca" src="./images/children.png" alt="children">
+                <input type="number" id="children" name="children" min="0" placeholder="Kids">
+            </div>
+            <div class="inputField" id="input">
+                <img id="imgtimer" src="./images/casal.png" alt="timer">
+                <input type="number" id="timer" name="timer" min="0" placeholder="Time(h)">
+            </div>
+            <button onclick="calcs()" class="botao"> BBQ! </button>
+            <div id="result" class="result">
+                <h2> You will need: </h2>
+                <div class="amount">
+                    <div class="meat">
+                        <img class="resultIcons" src="./images/meat (1).png" alt="meat">
+                        <p id="meat"></p>
+                    </div>
+                    <div class="soda">
+                        <img class="resultIcons" src="./images/coke.png" alt="soda">
+                        <p id="soda"></p>
+                    </div>
+                    <div class="beer">
+                        <img class="resultIcons" src="./images/beer.png" alt="beer">
+                        <p id="beer"></p>
+                    </div>
+                </div>
+                <button onclick="reset()" id="reset"> Go back ! </button>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
