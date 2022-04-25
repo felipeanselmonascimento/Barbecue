@@ -68,8 +68,8 @@ document.addEventListener('keypress', e => {
     }
 })
 
-document.addEventListener('click', () => {
-  if (document.getElementById('result').classList.contains('active')) reset()
-  else calcs()
-});
+// document.addEventListener('click', () => {
+//   if (document.getElementById('result').classList.contains('active')) reset()
+//   else calcs()
+// });
 
