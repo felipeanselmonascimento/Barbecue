@@ -62,6 +62,7 @@ function reset() {
 }
 
 document.addEventListener('keypress', e => {
+  console.log(e)
   if (e.key === 'Enter') {
     if (document.getElementById('result').classList.contains('active')) reset()
     else calcs()
